@@ -1,0 +1,9 @@
+A small team of 6 have been assigned a project to build a **blogging web application** coupled with social media functionalities that enable user to create, edit and delete blogs and even interact with blogs written by other individuals.
+The teams' language of choice to build the such application was opted to be **C#** to take advantage of MVC architecture offered by the **.NET Core Framework** for fast development process and easy maintenance.
+
+After the code is push to the mainline, the couple of steps involved and its associated tools during continuous integrations are:
+- Linting - This can be achieved using **StyleCop**. But for more configurational capabilities, one may even opt for **FXCop** which performs binary analysis unlike **StyleCop** which performs source code analysis. **Resharper** being another option.
+- Testing - Done through unit testing suite such as **xUnit** which is also compatible with **Resharper**.
+- Build- **C#** being a compiled language, it needs to be compiled into an executable for the application to function. This can be automated in the configuration file such as a **YAML file** in the integration server.
+
+Next step is a requirement of some kind of dedicated continuous integration server. Since, it is unclear as to how much traction this web application would gain in the near future and being a small to medium sized project without any special requirement managed by a team of 6, a typical cloud-based environment such as **GitLab** is sufficient and less complicated to setup. **GitLab** also offers a free version which can be used for developmental, experimentation and testing before rolling out to purchase the premium versions for production-based environment.
