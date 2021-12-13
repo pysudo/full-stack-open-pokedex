@@ -35,3 +35,4 @@ jobs:
           heroku_email: "bearsterns.dev@gmail.com"
           healthcheck: "https://fullstack-open-note-pokedex.herokuapp.com/health"
           checkstring: "ok"
+          rollbackonhealthcheckfailed: true
