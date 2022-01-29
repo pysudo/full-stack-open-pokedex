@@ -18,7 +18,7 @@ app.get('/version', (req, res) => {
 })
 
 app.get('/easter_egg', (req, res) => {
-  res.send('🥚 😁')
+  res.send('🥚 😅')
 })
 
 app.listen(PORT, () => {
