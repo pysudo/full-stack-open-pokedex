@@ -17,6 +17,9 @@ app.get('/version', (req, res) => {
   res.send(process.env.HEROKU_RELEASE_VERSION)
 })
 
+app.get('/easter_egg', (req, res) => {
+  res.send('🥚 😅')
+})
 
 app.listen(PORT, () => {
   console.log('server started on port 5000')
